@@ -1,5 +1,5 @@
 Team members:
-Sachin Kumar : Login Signup
+Sachin Kumar 
 Gurpreet Sandha
 Priyanka Kumari
 Suman Biswas
