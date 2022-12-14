@@ -1,11 +1,10 @@
 Team members:
-Sachin Kumar
+Sachin Kumar : Login Signup
 Gurpreet Sandha
 Priyanka Kumari
 Suman Biswas
 Manjeet
 
-Tasks:
 1.Dashboard
 2.Navbar and footer
 3.Add to Cart Functionality
