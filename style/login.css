@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Lato, sans-serif;
+}
+#log_main{
+    border: 1px solid grey;
+    background-color: #f2f2f2;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* padding-bottom: 85px; */
+}
+#log,#admin{
+    border: 0px solid red;
+    width: 400px;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#log_options{
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+#log_form > div,
+#admin_form >div{
+    border: 0px solid teal;
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+#log_form > div >input,
+#admin_form > div >input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.log_submit{
+    background-color: #222222;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+.log_decore{
+    text-decoration: underline;
+}
+#log_facebook,#log_google{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 35px;
+}
+
+/* -------------------------------- admin pannel css start from here------------------------------------- */
+
+#admin_open{
+    background-color: #222222;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 20px;
+    margin: 15px 0px; 
+    cursor: pointer;
+}
+#admin_form{
+    display: none;
+}
