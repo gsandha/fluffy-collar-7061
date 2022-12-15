@@ -54,6 +54,9 @@
 #three_img img{
     width: 100%;
 }
+.product_title{
+  text-align: center;
+}
 #quick{
     display: flex;
     justify-content: center;
@@ -74,4 +77,12 @@
     display: flex;
     justify-content: center;
     text-align: center;
+}
+.card-body a{
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+#new_nav{
+  margin-left: 35vw;
 }
