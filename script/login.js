@@ -1,4 +1,4 @@
-    let local_data = JSON.parse(localStorage.getItem('local_user'));
+    let local_data = JSON.parse(localStorage.getItem('local_user')) || [];
     let local_name = document.getElementById('log_Name');
     let local_email = document.getElementById('log_Email');
     let local_password = document.getElementById('log_Password');
