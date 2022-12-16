@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Lato, sans-serif;
+}
+#sign_main{
+    border: 1px solid grey;
+    background-color: #f2f2f2;
+    padding: 50px;
+    height: auto;
+}
+#sign{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    border: 0px solid;
+}
+#sigh_option{
+    border-bottom: 1px solid grey;
+    padding: 30px 0px;
+    margin-bottom: 15px;
+}
+#sigh_option >p{
+    border: 0px solid red;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#sign_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sigh_facebook,
+#sigh_google{
+    border: 1px solid;
+    padding: 2px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sigh_form > div{
+    border: 0px solid teal;
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+#sigh_form > div >input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.sign_decore,#sign_checkbox{
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+#sign_submit{
+    background-color: #222222;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#sigh_facebook:hover,
+#sigh_google:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: none;
+}
+#sign_submit:hover{
+    background-color: black;
+    cursor: pointer;
+}
