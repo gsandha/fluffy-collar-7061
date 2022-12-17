@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">x
+    <title>skincare page</title>
+    <link rel="stylesheet" href="./skincare.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="men_main">
+        <div id="men_sort">
+            <h4>THE MEN'S SHOP</h4>
+            <p onclick="allMen()">All Men's Body Care</p>
+            <p onclick="bodyWash()">Body Wash & Shower Gel</p>
+            <p onclick="Moisturizers()">Moisturizers</p>
+            <p onclick="BodySpray()">Body Spray & Cologne</p>
+            <p onclick="Fragrance()">Home Fragrance</p>
+            <p onclick="HandSoaps()">Hand Soaps & Sanitizers</p>
+        </div>
+        <div id="men_product">
+            <div>
+                <ul id="men_promo">
+                </ul>
+                <h1>Hair And Care</h1>
+                <div id="men_filter">
+                    <h2>filter by :-</h2>
+                    <select id="men_product_type">
+                        <option value="0">PRODUCT TYPE</option>
+                        <!-- <option value="5">Body wash</option> --> -->
+                        <option value="1">Moisturizers</option>
+                        <option value="2">Body Spray</option>
+                        <option value="3">Fragrance</option>
+                        <option value="4">Hand Soaps</option>
+                    </select>
+                    <select id="men_fragrance_name">
+                        <option value="0">FRAGRANCE NAME</option>
+                        <option value="1">After Dark</option>
+                        <option value="2">Black Tie</option>
+                        <option value="3">Marble</option>
+                        <option value="4">Noir</option>
+                        <option value="5">Ocean</option>
+                        <option value="6">Teakwood</option>
+                    </select>
+                    <select id="men_fragrance_category">
+                        <option value="0">FRAGRANCE CATEGORY</option>
+                        <option value="1">Fresh</option>
+                        <option value="2">Sweets</option>
+                        <option value="3">Fruits</option>
+                        <option value="4">Woody</option>
+                    </select>
+                    <select id="men_sort_by">
+                        <option value="0">SORT BY</option>
+                        <option value="asc">Price low to high</option>
+                        <option value="dsc">Price high to low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="men_container"></div>
+            <div id="workspace"> </div>
+        </div>
+        
+    </div>
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script  src="./skincare.js"></script>
+<script>
