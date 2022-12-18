@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --text-clr:#4f4f4f;
+}
+
+body{
+    font-family: 'Varta' , sans-serif;
+    
+}
+
+p{
+    color: #6c757c;
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-clr);
+}
+
+a:hover{
+    text-decoration: none;
+    color:var(--text-clr);
+}
+
+h2{
+    color:var(--text-clr);
+    font-size: 1.5rem;
+}
+#cart-main{
+    background-color: #fff;
+}
+
+
+.card{
+    border: none;
+}
+
+.product_img img{
+    min-width:300px;
+    max-height:300px;
+}
+.product_name{
+    color:black;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-title p{
+    font-size:0.9rem;
+    font-weight: 500;
+}
+.shadows{
+    background-color: var(--text-clr);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.remove-and-wish p{
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.price-money h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.fa-heart:hover{
+    color:red;
+
+}
+
+.price_indiv p{
+    font-size:1.1rem;
+}
+
+.fa-trash-alt:hover{
+    color:rgb(227, 14, 14);
+}
+.trash:hover{
+    color:red;
+}

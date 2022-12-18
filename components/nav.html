@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../images/fevicon_d.png">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
@@ -75,10 +75,11 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="btn btn-link dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                    <button id="cartpieces" class="btn btn-link dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
                         data-hover="dropdown">
                         <i class="fa-solid fa-briefcase"></i>
-                        Cart
+                        
+                       Cart
                     </button>
                 </div>
             </div>
@@ -339,4 +340,10 @@
             `
         }
     }
+
+    let computeddata=document.getElementById("cartpieces");
+
+   computeddata.addEventListener("click",function(){
+    window.location.href="cartpage.html"
+   })
 </script>
