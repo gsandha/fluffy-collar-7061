@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./dashboard.css">
     <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./components/nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="nav.css">
+    <!-- <link rel="stylesheet" href="nav.css"> -->
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
    
@@ -21,6 +22,283 @@
   <body>
 
 <!-- Carousel part -->
+<div class="navbar">
+  <div id="upper_most">
+      <div id="sub_upper">
+          <!-- <img src="https://e7.pngegg.com/pngimages/666/76/png-clipart-flag-of-the-united-states-national-flag-usa-flag-flag-logo.png"
+              alt="USA flag"> -->
+          <!-- <p>us-USD</p> -->
+      </div>
+  </div>
+
+  <div id="middle">
+      <div id="logo">
+          <img src="./images/Screenshot 2022-12-14 111525.png"
+              alt="dermstore_logo" style="width: 100%;">
+      </div>
+
+      <div id="search_box">
+          <input type="text" placeholder="Search for a product or brand...">
+      </div>
+
+      <div id="account_cart">
+          <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle btn-lg" id="op" type="button" data-toggle="dropdown">
+                  <i class="fa-regular fa-user"></i>
+                  Account
+              </button>
+
+              <ul class="dropdown-menu">
+                  <li class="dropdown"><button id="go_login">LOGIN</button></li>
+                  <li class="dropdown"><button id="go_signup">REGISTER</button></li>
+                  <hr>
+                  <li><a href="#">My Favourites</a></li>
+                  <li><a href="#">Your Orders</a></li>
+                  <li><a href="#">Your Auto-Replenishments</a></li>
+                  <li><a href="#">Your Referrals</a></li>
+              </ul>
+          </div>
+
+          <div class="dropdown">
+              <button id="cartpieces" class="btn btn-link dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                  data-hover="dropdown">
+                  <i class="fa-solid fa-briefcase"></i>
+                  
+                 Cart
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <div id="bottom">
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Brands
+          </button>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">0-9</a>
+              <a class="dropdown-item" href="#">A</a>
+              <a class="dropdown-item" href="#">B</a>
+              <a class="dropdown-item" href="#">C</a>
+              <a class="dropdown-item" href="#">D</a>
+              <a class="dropdown-item" href="#">E</a>
+              <a class="dropdown-item" href="#">F</a>
+              <a class="dropdown-item" href="#">G</a>
+              <a class="dropdown-item" href="#">H</a>
+              <a class="dropdown-item" href="#">I</a>
+              <a class="dropdown-item" href="#">J</a>
+              <a class="dropdown-item" href="#">K</a>
+              <a class="dropdown-item" href="#">L</a>
+              <a class="dropdown-item" href="#">M</a>
+              <a class="dropdown-item" href="#">N</a>
+              <a class="dropdown-item" href="#">O</a>
+              <a class="dropdown-item" href="#">P</a>
+              <a class="dropdown-item" href="#">Q</a>
+              <a class="dropdown-item" href="#">R</a>
+              <a class="dropdown-item" href="#">S</a>
+              <a class="dropdown-item" href="#">T</a>
+              <a class="dropdown-item" href="#">U</a>
+              <a class="dropdown-item" href="#">V</a>
+              <a class="dropdown-item" href="#">W</a>
+              <a class="dropdown-item" href="#">X</a>
+              <a class="dropdown-item" href="#">Y</a>
+              <a class="dropdown-item" href="#">Z</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Holiday <br> Shop
+          </button>
+          <div class="dropdown-menu lo">
+              <p>Shop By Price</p>
+              <a class="dropdown-item" href="#">Gift Under $50</a><br>
+              <a class="dropdown-item" href="#">Gift Under $100</a><br>
+              <a class="dropdown-item" href="#">Gift Under $200</a><br>
+              <a class="dropdown-item" href="#">Luxury Gifts Over $100</a><br>
+              <hr>
+              <p>Shop By Category</p>
+              <a class="dropdown-item" href="#">Dermstore Exclusives</a><br>
+              <a class="dropdown-item" href="#">BeautyFIX</a><br>
+              <a class="dropdown-item" href="#">Skin Care Gifts</a><br>
+              <a class="dropdown-item" href="#">Tools & Devices Gifts</a><br>
+              <a class="dropdown-item" href="#">Clearance</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Browse <br> By
+          </button>
+          <div class="dropdown-menu lo2">
+              <div id="ki">
+                  <div>
+                      <p>Brands</p>
+                      <a class="dropdown-item" href="#">SkinCeuticals</a><br>
+                      <a class="dropdown-item" href="#">EltaMD</a><br>
+                      <a class="dropdown-item" href="#">SkinMedica</a><br>
+                      <a class="dropdown-item" href="#">Obagi</a><br>
+                      <a class="dropdown-item" href="#">iS Clinical</a><br>
+                      <a class="dropdown-item" href="#">Eminence Organic Skin Care</a><br>
+                      <a class="dropdown-item" href="#">Revision Skincare</a><br>
+                      <a class="dropdown-item" href="#">Neocutis</a><br>
+                      <a class="dropdown-item" href="#">Oribe</a><br>
+                      <a class="dropdown-item" href="#">Sunday Riley</a><br>
+                      <a class="dropdown-item" href="#">PCA SKIN</a><br>
+                  </div>
+                  <div>
+                      <p>Concern</p>
+                      <a class="dropdown-item" href="#">Acne</a><br>
+                      <a class="dropdown-item" href="#">Acne Scars</a><br>
+                      <a class="dropdown-item" href="#">Aging Skin</a><br>
+                      <a class="dropdown-item" href="#">Blackheads</a><br>
+                      <a class="dropdown-item" href="#">Dark Circles</a><br>
+                      <a class="dropdown-item" href="#">Dark Spots</a><br>
+                      <a class="dropdown-item" href="#">Rosacea</a><br>
+                      <a class="dropdown-item" href="#">Oil Control</a><br>
+                      <a class="dropdown-item" href="#">Irritate Skin</a><br>
+                      <a class="dropdown-item" href="#">Large Pores</a><br>
+                      <a class="dropdown-item" href="#">Stretch Marks</a><br>
+                      <a class="dropdown-item" href="#">Wrinkles</a><br>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Bestsellers
+          </button>
+      </div>
+
+      <div class="dropdown">
+        <!-- <a href="./skincare.html">  -->
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="gotoSkinCare">
+              Skin <br> Care 
+          </button>
+        <!-- </a> -->
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="gotoMakeup">
+              Makeup
+          </button>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="gotoHairCare">
+              Hair <br> Care
+          </button>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Bath & <br> Body
+          </button>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="gotoHairFragrance">
+              Fragrance <br> Shop
+          </button>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Tools & <br> Devices
+          </button>
+          <div class="dropdown-menu lo">
+              <p>Skin Care Tools</p>
+              <p>Hair Care Tools</p>
+              <p>Makeup Tools</p>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Gifts & Sets
+          </button>
+          <div class="dropdown-menu lo">
+              <p>All Gifts & Sets</p>
+              <a class="dropdown-item" href="#">Holiday Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">Skin Care Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">Makeup Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">Hair Care Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">Bath & Body Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">Men's Kits & Sets</a><br>
+              <a class="dropdown-item" href="#">BeautyFIX</a><br>
+              <a class="dropdown-item" href="#">Best of Dermstore</a><br>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              BeautyFIX
+          </button>
+          <div class="dropdown-menu lo">
+              <a class="dropdown-item" href="#">BeautyFIX</a><br>
+              <a class="dropdown-item" href="#">Best of Dermstore</a><br>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Offers
+          </button>
+          <div class="dropdown-menu lo2">
+              <div id="ki">
+                  <div>
+                      <p>Sale</p>
+                      <a class="dropdown-item" href="#">Skin Care Sale</a><br>
+                      <a class="dropdown-item" href="#">Makeup Sale</a><br>
+                      <a class="dropdown-item" href="#">Hair Care Sale</a><br></a><br>
+                      <a class="dropdown-item" href="#">Bath & Body Sale</a><br>
+                      <a class="dropdown-item" href="#">Tools_&_Devices_Sale</a><br>
+                  </div>
+                  <!-- <div>
+                      <p>Shop By % Off</p>
+                      <a class="dropdown-item" href="#">Save 10%</a><br>
+                      <a class="dropdown-item" href="#">Save 15%</a><br>
+                      <a class="dropdown-item" href="#">Save 20%</a><br></a><br>
+                      <a class="dropdown-item" href="#">Save 25%</a><br>
+                      <a class="dropdown-item" href="#">Save 30%</a><br>
+                      <a class="dropdown-item" href="#">Save 40%</a><br>
+                      <a class="dropdown-item" href="#">Save 50%</a><br>
+                  </div> -->
+                  <div>
+                      <p>Others Offer</p>
+                      <a class="dropdown-item" href="#">Save_with_Auto-Replenishments</a><br>
+                      <a class="dropdown-item" href="#">Refer a Friend, Get $15</a><br>
+                      <a class="dropdown-item" href="#">Value Sets</a><br></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              New
+          </button>
+          <div class="dropdown-menu lo">
+              <p>All New Arrivals</p>
+              <a class="dropdown-item" href="#">New & Now</a><br>
+              <a class="dropdown-item" href="#">New Skincare</a><br>
+              <a class="dropdown-item" href="#">New Haircare</a><br></a><br>
+              <a class="dropdown-item" href="#">New Makeup</a><br>
+              <a class="dropdown-item" href="#">New Bath & Body</a><br>
+              <a class="dropdown-item" href="#">New Men's Products</a><br>
+              <a class="dropdown-item" href="#">New Gifts & Sets</a>
+          </div>
+      </div>
+<!-- 
+      <div class="dropdown">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Skin 101
+          </button>
+      </div> -->
+
+  </div>
+</div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -700,7 +978,87 @@
     </div>
     </div>
 </div>
+<hr>
 
+    <div id="main">
+        <div id="lh">
+            <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+            <button>SIGN ME UP</button>
+            <hr>
+            <p>Customer Service</p>
+            <div><i class="fa-solid fa-circle-exclamation"></i>Help Center/FAQs</div>
+            <div><i class="fa-solid fa-rotate-left"></i>Returns</div>
+            <div><i class="fa-solid fa-truck"></i>Shipping Information</div>
+            <div><i class="fa-regular fa-circle-dot"></i>Track my order</div>
+            <div><i class="fa-solid fa-cookie"></i>Cookie Settings</div>
+        </div>
+
+        <div id="rh">
+            <div>
+                <p>Connect with us</p>
+                <div>
+                     <i class="fa-brands fa-facebook" id="fb_id"></i>
+                     <i class="fa-brands fa-twitter" id="t_id"></i>
+                     <i class="fa-brands fa-instagram" id="insta_id"></i>
+                     <i class="fa-brands fa-youtube" id="yt_id"></i>
+                     <i class="fa-brands fa-pinterest-p" id="pi_id"></i>
+                </div>
+            </div>
+            <div id="rh_3">
+                <div>
+                    <hr>
+                    <div>My Account</div>
+                    <div>Manage My Auto-Replenishments</div>
+                    <div>My Rewards</div>
+                    <div>My Favourites</div>
+                    <div>Refer a Friend</div>
+                    <div>Order History</div>
+                </div>
+                <div>
+                    <hr>
+                    <div>Company</div>
+                    <div>About Us</div>
+                    <div>Press</div>
+                    <div>What is Klarna?</div>
+                </div>
+                <div>
+                    <hr>
+                    <div>Legal</div>
+                    <div>Privacy Policy</div>
+                    <div>Trem & Conditions</div>
+                    <div>Modern Slavery Statement</div>
+                    <div>Product Recall</div>
+                    <div>Accessibilitys</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <div id="main_btm" >
+        <div id="btm_lh" style="padding: 80px;">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPLGyec4zMt0Yg6w6EJYmQYmcSks1i5yUqnLbDLIBJIFhnMtFO" alt="">
+            <p>2022 <i class="fa-regular fa-copyright"></i> The elite Store Pvt ltd</p>
+        </div>
+
+        <div id="btm_rh" style="padding: 80px;"> 
+            <h3 >Pay securely with</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpY6x7u7XGpWU9KYiNpfu2gK4hAuYjA-4Kbb2SjyfIusyDiiL" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpY6x7u7XGpWU9KYiNpfu2gK4hAuYjA-4Kbb2SjyfIusyDiiL" alt="">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1yUNy1dsHAWfOglCxtFahTznJnis6OHKamAtUzDfU7hUW96qX" alt="">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE0skFm-QPqEQu7fEd185XD3R5Ox_moBqdMErp3DV12VJ7NiwS" alt="">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE0skFm-QPqEQu7fEd185XD3R5Ox_moBqdMErp3DV12VJ7NiwS" alt="">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuxmS0uta3Yn5kTAgWp4nVkgXzQN6EIdvStrDmYcfzIrGm3LV9" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5z_VjHCvmWuGIUzEWdF3pOQxMB-tHo7Tbhllq_Y1Eh8snt-kv" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXHaYLsH58gjMP54GAdAUydLYSJVBWuz4alseoKk0Bp8JVnQp" alt="">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCFG_vDtUyyxSnMHruayeD6BEq3PPVEaXai604UxMOWfqnOfQI" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6If-Vf0G82j6c9vtCxD33HKFOypc0InrHonj3-YopMWrgC_gu" alt="">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo-g_63kGWO1ioFdLnfPNQr1Vt8SrPXPD6Je42a7Fzvq1NP_q2" alt="">
+        </div>
+    </div>
+  <script src="./components/script.js"></script>
+  <script src="./dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
