@@ -5,10 +5,12 @@ async function skinCare(){
     append(data)
 }
 skinCare();
-let cartItem= JSON.parse(localStorage.setItem("cartProductItem")) || [];
+let cartItem= JSON.parse(localStorage.getItem("cartProductItem")) || [];
+let workspace=document.getElementById("workspace")
 function append(data){
+    workspace.innerHTML = null;
     data.forEach(function(el){
-        let workspace=document.getElementById("workspace")
+        
         let div_element=document.createElement("div")
         let img=document.createElement("img")
         img.src=el.image
@@ -36,3 +38,26 @@ function append(data){
 
     })
 }
+
+let Sort = document.getElementById('men_sort_by');
+Sort.onchange = async function (){
+    //console.log(Sort.value);
+    let res=await fetch(`https://63997e4116b0fdad773e785b.mockapi.io/makeup`);
+    let data=await res.json()
+
+    if(Sort.value == "asc"){
+        data.sort(function(a,b){
+            return a.price - b.price
+        })
+        append(data)
+    }
+    else if(Sort.value == "dsc"){
+        data.sort(function(a,b){
+            return b.price - a.price
+        })
+        append(data)
+    }
+    else if(Sort.value == "0"){
+        append(data)
+    }
+};
