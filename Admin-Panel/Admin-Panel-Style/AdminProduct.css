@@ -1,0 +1,484 @@
+body {
+    background-color: #d5bfbf0e;
+}
+
+.io {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+    position: absolute;
+    width: calc(100% - 510px);
+    left: 500px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+    top: 45px;
+    padding-bottom: 20px;
+}
+
+.io>div>img {
+    width: 50%;
+}
+
+.op {
+    display: flex;
+}
+
+.lo,
+.jp {
+    position: fixed;
+    height: calc(100% - 43%);
+    width: calc(100% - 74%);
+    top: 43%;
+    bottom: 10px;
+}
+
+.op .lo form,
+.op .jp form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.op .lo form input,
+.op .jp form input {
+    /* padding: 50px 100px 50px 100px; */
+    font-size: xx-large;
+    padding: 2px;
+    border-radius: 16px;
+    border: none;
+    text-align: center;
+    border: 2px solid aqua;
+}
+
+#ml {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    #ml {
+        padding: 19px 32px;
+    }
+}
+
+#ml:before,
+#ml:after {
+    border-radius: 80px;
+}
+
+#ml:before {
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+#ml:after {
+    background-color: initial;
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+#ml:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+}
+
+#ml:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+
+#ml:active:not(:disabled) {
+    color: #ccc;
+}
+
+#ml:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+#ml:active:not(:disabled):after {
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+#ml:disabled {
+    cursor: default;
+    opacity: .24;
+}
+
+.lo2 img {
+    width: 29%;
+    border-radius: 16px;
+    border-end-end-radius: 100px;
+    /* border-start-start-radius: 100px; */
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.lo2 {
+    position: fixed;
+    top: 5%;
+}
+
+.main {
+    height: 300px;
+    border: 2px solid rgba(218, 102, 123, 1);
+    border-radius: 16px;
+    box-shadow: 0 0 0 2px rgba(218, 102, 123, 1), 8px 8px 0 0 rgba(218, 102, 123, 1);
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #fff;
+}
+
+
+.main button {
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.main button:hover,
+.main button:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.main button:active {
+    background: var(--color);
+    color: #fff;
+}
+
+.searchbox {
+    position: fixed;
+    display: flex;
+    bottom: 94.5%;
+    gap: 20px;
+}
+
+.searchbox input {
+    width: 0%;
+    padding-left: 2%;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    color: #838383;
+    background-color: #f5f5f5;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    padding: 5%;
+    border-radius: 16px;
+    color: red;
+    background-color: transparent;
+}
+
+.searchbox span ion-icon {
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    font-size: 1.5rem;
+    color: #838383;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.searchbox input::-webkit-input-placeholder {
+    color: red;
+}
+
+.dot {
+    position: fixed;
+    top: 12px;
+    right: 90px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.text {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    visibility: hidden;
+    font-family: sans-serif;
+}
+
+.dot-2 {
+    position: fixed;
+    top: 12px;
+    right: 193px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.text-2 {
+    position: fixed;
+    top: 12px;
+    right: 120px;
+    visibility: hidden;
+    font-family: sans-serif;
+}
+
+
+.dot-3 {
+    position: fixed;
+    top: 12px;
+    right: 300px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.text-3 {
+    position: fixed;
+    top: 12px;
+    right: 220px;
+    visibility: hidden;
+    font-family: sans-serif;
+}
+
+.dot-4 {
+    position: fixed;
+    top: 12px;
+    right: 403px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.text-4 {
+    position: fixed;
+    top: 12px;
+    right: 328px;
+    visibility: hidden;
+    font-family: sans-serif;
+}
+
+
+.dott {
+    position: fixed;
+    bottom: 12px;
+    left: 115px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+
+.textt {
+    position: fixed;
+    bottom: 12px;
+    left: 145px;
+    /* visibility: hidden; */
+    font-family: sans-serif;
+}
+
+.dott-2 {
+    position: fixed;
+    bottom: 12px;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.textt-2 {
+    position: fixed;
+    bottom: 12px;
+    left: 220px;
+    /* visibility: hidden; */
+    font-family: sans-serif;
+}
+
+
+.dott-3 {
+    position: fixed;
+    bottom: 12px;
+    left: 270px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.textt-3 {
+    position: fixed;
+    bottom: 12px;
+    left: 300px;
+    /* visibility: hidden; */
+    font-family: sans-serif;
+}
+
+.dott-4 {
+    position: fixed;
+    bottom: 12px;
+    left: 350px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+
+.textt-4 {
+    position: fixed;
+    bottom: 12px;
+    left: 380px;
+    /* visibility: hidden; */
+    font-family: sans-serif;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"] {
+    position: fixed;
+    background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, .1), hsla(0, 0%, 100%, .1)),
+        -webkit-linear-gradient(left, #f66 50%, #6cf 50%);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 15px 0;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 4px hsla(0, 0%, 0%, .5),
+        inset 0 0 10px hsla(0, 0%, 0%, .5),
+        0 0 0 1px hsla(0, 0%, 0%, .1),
+        0 -1px 2px 2px hsla(0, 0%, 0%, .25),
+        0 2px 2px 2px hsla(0, 0%, 100%, .75);
+    cursor: pointer;
+    height: 25px;
+    padding-right: 25px;
+    width: 75px;
+    -webkit-appearance: none;
+    -webkit-transition: .25s;
+    bottom: 7px;
+    z-index: 1;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:after {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 0%, .1));
+    border-radius: 25px;
+    box-shadow: inset 0 1px 1px 1px hsla(0, 0%, 100%, 1),
+        inset 0 -1px 1px 1px hsla(0, 0%, 0%, .25),
+        0 1px 3px 1px hsla(0, 0%, 0%, .5),
+        0 0 2px hsla(0, 0%, 0%, .25);
+    content: '';
+    display: block;
+    height: 25px;
+    width: 50px;
+}
+
+.checkbox-wrapper-25 input[type="checkbox"]:checked {
+    background-position: 0 0, 35px 0;
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.jp{
+    display: none;
+}
