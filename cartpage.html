@@ -100,7 +100,7 @@
 
 </body>
 
-</html>
+
 <script>
   let mainCartContainer = document.getElementById("cart-main");
   let specificData = JSON.parse(localStorage.getItem("cartProductItem"))||[];
@@ -136,7 +136,7 @@
                       <p onclick="movetowhishlist"><i class="fas fa-heart"></i>MOVE TO WISH LIST</p>
                       </div>
                       <div class="col-4 d-flex justify-content-end price_money">
-                        <h3>$<span id="itemval">${element.price}</h3>
+                        <h3>$<span id="itemval">${parseInt(element.price)}</h3>
                         </div>
                       </div>
                        </div>
@@ -148,7 +148,7 @@
     })
 
     mainCartContainer.innerHTML = array.join(" ");
-    
+
   }
 
 
@@ -172,10 +172,12 @@ if(query.value==="mandy"){
 
 function cartremove(index,primaryData){
   console.log(primaryData)
- primaryData.splice(index,1);
+//  primaryData.splice(index,1);
+primaryData.parentNode.parentNode.removeChild(primaryData.parentNode)
  localStorage.setItem("cartProduct",JSON.stringify(primaryData));
  displayData(primaryData);
 };
 
 
 </script>
+</html>
