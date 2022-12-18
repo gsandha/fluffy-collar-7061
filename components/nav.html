@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +13,43 @@
     <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .lo {
+        text-align: center;
+    }
+
+    .lo2 #ki {
+        display: flex;
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .lo2 p {
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .lo2 a {
+        color: black;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+
 <body>
     <div class="navbar">
         <div id="upper_most">
             <div id="sub_upper">
-                <img src="https://e7.pngegg.com/pngimages/666/76/png-clipart-flag-of-the-united-states-national-flag-usa-flag-flag-logo.png" alt="USA flag">
+                <img src="https://e7.pngegg.com/pngimages/666/76/png-clipart-flag-of-the-united-states-national-flag-usa-flag-flag-logo.png"
+                    alt="USA flag">
                 <p>us-USD</p>
             </div>
         </div>
 
         <div id="middle">
             <div id="logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt="dermstore_logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU"
+                    alt="dermstore_logo">
             </div>
 
             <div id="search_box">
@@ -32,11 +58,11 @@
 
             <div id="account_cart">
                 <div class="dropdown">
-                    <button class="btn btn-link dropdown-toggle btn-lg" type="button"  data-toggle="dropdown">
+                    <button class="btn btn-link dropdown-toggle btn-lg" id="op" type="button" data-toggle="dropdown">
                         <i class="fa-regular fa-user"></i>
                         Account
                     </button>
-                    
+
                     <ul class="dropdown-menu">
                         <li class="dropdown"><button id="go_login">LOGIN</button></li>
                         <li class="dropdown"><button id="go_signup">REGISTER</button></li>
@@ -49,7 +75,8 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="btn btn-link dropdown-toggle btn-lg" type="button"  data-toggle="dropdown" data-hover="dropdown">
+                    <button class="btn btn-link dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                        data-hover="dropdown">
                         <i class="fa-solid fa-briefcase"></i>
                         Cart
                     </button>
@@ -60,56 +87,56 @@
         <div id="bottom">
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                Brands
+                    Brands
                 </button>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">0-9</a>
-                <a class="dropdown-item" href="#">A</a>
-                <a class="dropdown-item" href="#">B</a>
-                <a class="dropdown-item" href="#">C</a>
-                <a class="dropdown-item" href="#">D</a>
-                <a class="dropdown-item" href="#">E</a>
-                <a class="dropdown-item" href="#">F</a>
-                <a class="dropdown-item" href="#">G</a>
-                <a class="dropdown-item" href="#">H</a>
-                <a class="dropdown-item" href="#">I</a>
-                <a class="dropdown-item" href="#">J</a>
-                <a class="dropdown-item" href="#">K</a>
-                <a class="dropdown-item" href="#">L</a>
-                <a class="dropdown-item" href="#">M</a>
-                <a class="dropdown-item" href="#">N</a>
-                <a class="dropdown-item" href="#">O</a>
-                <a class="dropdown-item" href="#">P</a>
-                <a class="dropdown-item" href="#">Q</a>
-                <a class="dropdown-item" href="#">R</a>
-                <a class="dropdown-item" href="#">S</a>
-                <a class="dropdown-item" href="#">T</a>
-                <a class="dropdown-item" href="#">U</a>
-                <a class="dropdown-item" href="#">V</a>
-                <a class="dropdown-item" href="#">W</a>
-                <a class="dropdown-item" href="#">X</a>
-                <a class="dropdown-item" href="#">Y</a>
-                <a class="dropdown-item" href="#">Z</a>
+                    <a class="dropdown-item" href="#">0-9</a>
+                    <a class="dropdown-item" href="#">A</a>
+                    <a class="dropdown-item" href="#">B</a>
+                    <a class="dropdown-item" href="#">C</a>
+                    <a class="dropdown-item" href="#">D</a>
+                    <a class="dropdown-item" href="#">E</a>
+                    <a class="dropdown-item" href="#">F</a>
+                    <a class="dropdown-item" href="#">G</a>
+                    <a class="dropdown-item" href="#">H</a>
+                    <a class="dropdown-item" href="#">I</a>
+                    <a class="dropdown-item" href="#">J</a>
+                    <a class="dropdown-item" href="#">K</a>
+                    <a class="dropdown-item" href="#">L</a>
+                    <a class="dropdown-item" href="#">M</a>
+                    <a class="dropdown-item" href="#">N</a>
+                    <a class="dropdown-item" href="#">O</a>
+                    <a class="dropdown-item" href="#">P</a>
+                    <a class="dropdown-item" href="#">Q</a>
+                    <a class="dropdown-item" href="#">R</a>
+                    <a class="dropdown-item" href="#">S</a>
+                    <a class="dropdown-item" href="#">T</a>
+                    <a class="dropdown-item" href="#">U</a>
+                    <a class="dropdown-item" href="#">V</a>
+                    <a class="dropdown-item" href="#">W</a>
+                    <a class="dropdown-item" href="#">X</a>
+                    <a class="dropdown-item" href="#">Y</a>
+                    <a class="dropdown-item" href="#">Z</a>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                Holiday <br> Shop
+                    Holiday <br> Shop
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu lo">
                     <p>Shop By Price</p>
-                <a class="dropdown-item" href="#">Gift Under $50</a><br>
-                <a class="dropdown-item" href="#">Gift Under $100</a><br>
-                <a class="dropdown-item" href="#">Gift Under $200</a><br>
-                <a class="dropdown-item" href="#">Luxury Gifts Over $100</a><br>
-                <hr>
+                    <a class="dropdown-item" href="#">Gift Under $50</a><br>
+                    <a class="dropdown-item" href="#">Gift Under $100</a><br>
+                    <a class="dropdown-item" href="#">Gift Under $200</a><br>
+                    <a class="dropdown-item" href="#">Luxury Gifts Over $100</a><br>
+                    <hr>
                     <p>Shop By Category</p>
-                <a class="dropdown-item" href="#">Dermstore Exclusives</a><br>
-                <a class="dropdown-item" href="#">BeautyFIX</a><br>
-                <a class="dropdown-item" href="#">Skin Care Gifts</a><br>
-                <a class="dropdown-item" href="#">Tools & Devices Gifts</a><br>
-                <a class="dropdown-item" href="#">Clearance</a>
+                    <a class="dropdown-item" href="#">Dermstore Exclusives</a><br>
+                    <a class="dropdown-item" href="#">BeautyFIX</a><br>
+                    <a class="dropdown-item" href="#">Skin Care Gifts</a><br>
+                    <a class="dropdown-item" href="#">Tools & Devices Gifts</a><br>
+                    <a class="dropdown-item" href="#">Clearance</a>
                 </div>
             </div>
 
@@ -117,33 +144,38 @@
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Browse <br> By
                 </button>
-                <div class="dropdown-menu">
-                    <p>Brands</p>
-                <a class="dropdown-item" href="#">SkinCeuticals</a><br>
-                <a class="dropdown-item" href="#">EltaMD</a><br>
-                <a class="dropdown-item" href="#">SkinMedica</a><br>
-                <a class="dropdown-item" href="#">Obagi</a><br>
-                <a class="dropdown-item" href="#">iS Clinical</a><br>
-                <a class="dropdown-item" href="#">Eminence Organic Skin Care</a><br>
-                <a class="dropdown-item" href="#">Revision Skincare</a><br>
-                <a class="dropdown-item" href="#">Neocutis</a><br>
-                <a class="dropdown-item" href="#">Oribe</a><br>
-                <a class="dropdown-item" href="#">Sunday Riley</a><br>
-                <a class="dropdown-item" href="#">PCA SKIN</a><br>
-                <hr>
-                    <p>Concern</p>
-                <a class="dropdown-item" href="#">Acne</a><br>
-                <a class="dropdown-item" href="#">Acne Scars</a><br>
-                <a class="dropdown-item" href="#">Aging Skin</a><br>
-                <a class="dropdown-item" href="#">Blackheads</a><br>
-                <a class="dropdown-item" href="#">Dark Circles</a><br>
-                <a class="dropdown-item" href="#">Dark Spots</a><br>
-                <a class="dropdown-item" href="#">Rosacea</a><br>
-                <a class="dropdown-item" href="#">Oil Control</a><br>
-                <a class="dropdown-item" href="#">Irritate Skin</a><br>
-                <a class="dropdown-item" href="#">Large Pores</a><br>
-                <a class="dropdown-item" href="#">Stretch Marks</a><br>
-                <a class="dropdown-item" href="#">Wrinkles</a><br>
+                <div class="dropdown-menu lo2">
+                    <div id="ki">
+                        <div>
+                            <p>Brands</p>
+                            <a class="dropdown-item" href="#">SkinCeuticals</a><br>
+                            <a class="dropdown-item" href="#">EltaMD</a><br>
+                            <a class="dropdown-item" href="#">SkinMedica</a><br>
+                            <a class="dropdown-item" href="#">Obagi</a><br>
+                            <a class="dropdown-item" href="#">iS Clinical</a><br>
+                            <a class="dropdown-item" href="#">Eminence Organic Skin Care</a><br>
+                            <a class="dropdown-item" href="#">Revision Skincare</a><br>
+                            <a class="dropdown-item" href="#">Neocutis</a><br>
+                            <a class="dropdown-item" href="#">Oribe</a><br>
+                            <a class="dropdown-item" href="#">Sunday Riley</a><br>
+                            <a class="dropdown-item" href="#">PCA SKIN</a><br>
+                        </div>
+                        <div>
+                            <p>Concern</p>
+                            <a class="dropdown-item" href="#">Acne</a><br>
+                            <a class="dropdown-item" href="#">Acne Scars</a><br>
+                            <a class="dropdown-item" href="#">Aging Skin</a><br>
+                            <a class="dropdown-item" href="#">Blackheads</a><br>
+                            <a class="dropdown-item" href="#">Dark Circles</a><br>
+                            <a class="dropdown-item" href="#">Dark Spots</a><br>
+                            <a class="dropdown-item" href="#">Rosacea</a><br>
+                            <a class="dropdown-item" href="#">Oil Control</a><br>
+                            <a class="dropdown-item" href="#">Irritate Skin</a><br>
+                            <a class="dropdown-item" href="#">Large Pores</a><br>
+                            <a class="dropdown-item" href="#">Stretch Marks</a><br>
+                            <a class="dropdown-item" href="#">Wrinkles</a><br>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -156,38 +188,38 @@
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Skin <br> Care
-                </button> 
+                </button>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Makeup
-                </button> 
+                </button>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Hair <br> Care
-                </button> 
+                </button>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Bath & <br> Body
-                </button> 
+                </button>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Fragrance <br> Shop
-                </button> 
+                </button>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     Tools & <br> Devices
-                </button> 
-                <div class="dropdown-menu">
+                </button>
+                <div class="dropdown-menu lo">
                     <p>Skin Care Tools</p>
                     <p>Hair Care Tools</p>
                     <p>Makeup Tools</p>
@@ -196,95 +228,115 @@
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                Gifts & Sets
+                    Gifts & Sets
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu lo">
                     <p>All Gifts & Sets</p>
-                <a class="dropdown-item" href="#">Holiday Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">Skin Care Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">Makeup Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">Hair Care Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">Bath & Body Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">Men's Kits & Sets</a><br>
-                <a class="dropdown-item" href="#">BeautyFIX</a><br>
-                <a class="dropdown-item" href="#">Best of Dermstore</a><br>
+                    <a class="dropdown-item" href="#">Holiday Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">Skin Care Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">Makeup Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">Hair Care Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">Bath & Body Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">Men's Kits & Sets</a><br>
+                    <a class="dropdown-item" href="#">BeautyFIX</a><br>
+                    <a class="dropdown-item" href="#">Best of Dermstore</a><br>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                BeautyFIX
+                    BeautyFIX
                 </button>
-                <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">BeautyFIX</a><br>
-                <a class="dropdown-item" href="#">Best of Dermstore</a><br>
+                <div class="dropdown-menu lo">
+                    <a class="dropdown-item" href="#">BeautyFIX</a><br>
+                    <a class="dropdown-item" href="#">Best of Dermstore</a><br>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                Offers
+                    Offers
                 </button>
-                <div class="dropdown-menu">
-                    <p>Sale</p>
-                <a class="dropdown-item" href="#">Skin Care Sale</a><br>
-                <a class="dropdown-item" href="#">Makeup Sale</a><br>
-                <a class="dropdown-item" href="#">Hair Care Sale</a><br></a><br>
-                <a class="dropdown-item" href="#">Bath & Body Sale</a><br>
-                <a class="dropdown-item" href="#">Tools & Devices Sale</a><br>
-                <hr>
-                <p>Shop By % Off</p>
-                <a class="dropdown-item" href="#">Save 10%</a><br>
-                <a class="dropdown-item" href="#">Save 15%</a><br>
-                <a class="dropdown-item" href="#">Save 20%</a><br></a><br>
-                <a class="dropdown-item" href="#">Save 25%</a><br>
-                <a class="dropdown-item" href="#">Save 30%</a><br>
-                <a class="dropdown-item" href="#">Save 40%</a><br>
-                <a class="dropdown-item" href="#">Save 50%</a><br>
-                <hr>
-                <p>Others Offer</p>
-                <a class="dropdown-item" href="#">Save with Auto-Replenishments</a><br>
-                <a class="dropdown-item" href="#">Refer a Friend, Get $15</a><br>
-                <a class="dropdown-item" href="#">Value Sets</a><br></a>
+                <div class="dropdown-menu lo2">
+                    <div id="ki">
+                        <div>
+                            <p>Sale</p>
+                            <a class="dropdown-item" href="#">Skin Care Sale</a><br>
+                            <a class="dropdown-item" href="#">Makeup Sale</a><br>
+                            <a class="dropdown-item" href="#">Hair Care Sale</a><br></a><br>
+                            <a class="dropdown-item" href="#">Bath & Body Sale</a><br>
+                            <a class="dropdown-item" href="#">Tools_&_Devices_Sale</a><br>
+                        </div>
+                        <!-- <div>
+                            <p>Shop By % Off</p>
+                            <a class="dropdown-item" href="#">Save 10%</a><br>
+                            <a class="dropdown-item" href="#">Save 15%</a><br>
+                            <a class="dropdown-item" href="#">Save 20%</a><br></a><br>
+                            <a class="dropdown-item" href="#">Save 25%</a><br>
+                            <a class="dropdown-item" href="#">Save 30%</a><br>
+                            <a class="dropdown-item" href="#">Save 40%</a><br>
+                            <a class="dropdown-item" href="#">Save 50%</a><br>
+                        </div> -->
+                        <div>
+                            <p>Others Offer</p>
+                            <a class="dropdown-item" href="#">Save_with_Auto-Replenishments</a><br>
+                            <a class="dropdown-item" href="#">Refer a Friend, Get $15</a><br>
+                            <a class="dropdown-item" href="#">Value Sets</a><br></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                New
+                    New
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu lo">
                     <p>All New Arrivals</p>
-                <a class="dropdown-item" href="#">New & Now</a><br>
-                <a class="dropdown-item" href="#">New Skincare</a><br>
-                <a class="dropdown-item" href="#">New Haircare</a><br></a><br>
-                <a class="dropdown-item" href="#">New Makeup</a><br>
-                <a class="dropdown-item" href="#">New Bath & Body</a><br>
-                <a class="dropdown-item" href="#">New Men's Products</a><br>
-                <a class="dropdown-item" href="#">New Gifts & Sets</a>
+                    <a class="dropdown-item" href="#">New & Now</a><br>
+                    <a class="dropdown-item" href="#">New Skincare</a><br>
+                    <a class="dropdown-item" href="#">New Haircare</a><br></a><br>
+                    <a class="dropdown-item" href="#">New Makeup</a><br>
+                    <a class="dropdown-item" href="#">New Bath & Body</a><br>
+                    <a class="dropdown-item" href="#">New Men's Products</a><br>
+                    <a class="dropdown-item" href="#">New Gifts & Sets</a>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                Skin 101
+                    Skin 101
                 </button>
             </div>
 
         </div>
     </div>
 </body>
+
 </html>
 <script>
 
     let go_login = document.getElementById('go_login');
     let go_signup = document.getElementById('go_signup');
 
-    go_login.onclick = ()=>{
+    go_login.onclick = () => {
         window.location.href = "../login.html";
     };
 
-    go_signup.onclick = ()=>{
+    go_signup.onclick = () => {
         window.location.href = "../signup.html";
     };
+
+    let getDataLocalStorage = JSON.parse(localStorage.getItem('putArray'));
+
+    for (let i = 0; i < getDataLocalStorage.length; i++) {
+        let getAccount = document.querySelector('#op');
+
+        if (getDataLocalStorage[i] !== '') {
+            getAccount.innerHTML = `
+            <i class="fa-regular fa-user"></i>
+            ${getDataLocalStorage[i].Name}
+            `
+        }
+    }
 </script>
