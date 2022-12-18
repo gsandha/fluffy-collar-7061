@@ -30,7 +30,8 @@ body {
 .jp {
     position: fixed;
     height: calc(100% - 43%);
-    width: calc(100% - 74%);
+    /* width: calc(100% - 74%);   --------------------*/
+    width: calc(100% - 80%);  
     top: 43%;
     bottom: 10px;
 }
@@ -39,7 +40,8 @@ body {
 .op .jp form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap : 30px;    ------------------------------- */
+    gap: 10px;
     border: 2px solid black;
     padding: 20px;
     border-radius: 16px;
@@ -49,7 +51,8 @@ body {
 .op .lo form input,
 .op .jp form input {
     /* padding: 50px 100px 50px 100px; */
-    font-size: xx-large;
+    /* font-size: xx-large;   -------------------------- */
+    font-size:large;
     padding: 2px;
     border-radius: 16px;
     border: none;
@@ -168,7 +171,8 @@ body {
 }
 
 .lo2 img {
-    width: 29%;
+    /* width: 25%;    ------------------------ */
+    width: 25%;
     border-radius: 16px;
     border-end-end-radius: 100px;
     /* border-start-start-radius: 100px; */
