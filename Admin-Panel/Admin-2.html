@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Page</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    button:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    button:hover:after {
+        transform: translate(0, 0);
+    }
+
+    button:active {
+        background-color: #ffdeda;
+        outline: 0;
+    }
+
+    button:hover {
+        outline: 0;
+    }
+
+ 
+
+
+    body {
+        font-family: "segoe ui", sans-serif;
+        background-color: #ddd;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+        background-color: #4CAF50;
+    }
+
+    tr:nth-child(odd) {
+        background: rgb(170, 170, 90);
+    }
+
+    th {
+        background: rgb(83, 125, 210);
+    }
+
+    #nav {
+        background-color: rgb(113, 205, 110);
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    #nav h1 {
+        float: left;
+    }
+
+    #nav a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    #nav a:hover {
+        background-color: #ddd;
+    }
+
+    #create {
+        text-align: center;
+    }
+
+    #create h1 {
+        margin-bottom: 50px;
+    }
+
+    #create input[type="text"],
+    #create select {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 12px 15px;
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+
+    #create input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: 2px solid red;
+        border-radius: 4px;
+        padding: 12px 15px;
+        width: 20%;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    #create input[type="submit"]:hover {
+        background-color: #a04545;
+        border-radius: 100px;
+    }
+
+    #date {
+        padding: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        cursor: pointer;
+        margin-bottom: 1%;
+    }
+
+    th,
+    td {
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    table {
+        margin-top: 30px;
+    }
+
+    button{
+        margin-left: 30%;
+    }
+</style>
+
+<body>
+    <div id="nav">
+        <h1>Admin Page to Manage User Data</h1>
+        <a href="Admin.html">Home Page</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>PhoneNo</th>
+                <th>Password</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Append the elements here using JS and DOM  -->
+        </tbody>
+    </table>
+</body>
+<script>
+    // Write all the JS Code related to Favourites Page Here 
+    let adminData = JSON.parse(localStorage.getItem('take')) || [];
+    function loadTasks(tasks) {
+        let tbody = document.querySelector('tbody');
+        tbody.innerHTML = '';
+        for (let i = 0; i < tasks.length; i++) {
+            let tr = document.createElement('tr');
+            for (const key in tasks[i]) {
+                let td = document.createElement('td');
+                td.textContent = tasks[i][key];
+                tr.appendChild(td);
+            }
+            let td = document.createElement('td');
+            let remBtn = document.createElement('button');
+            remBtn.textContent = 'Remove';
+            remBtn.addEventListener('click', function () {
+                let remove = JSON.parse(localStorage.getItem('take')) || [];
+                remove.splice(i, 1);
+                console.log(remove);
+                localStorage.setItem('take', JSON.stringify(remove));
+                loadTasks(remove);
+            });
+            td.appendChild(remBtn);
+            tr.appendChild(td);
+            tbody.appendChild(tr);
+        }
+    }
+    loadTasks(adminData);
+</script>
+
+</html>
