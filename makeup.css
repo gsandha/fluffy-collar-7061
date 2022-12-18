@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#men_main{
+    border: 0px solid red;
+    display: flex;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+#men_sort{
+    border: 0px solid yellow;
+    width: 20%;
+}
+#men_sort >h4{
+    margin: 15px;
+    color: #333333;
+}
+#men_sort >p{
+    margin: 15px;
+    color: grey;
+    cursor: pointer;
+}
+#men_product{
+    border: 0px solid green;
+    width: 80%;
+}
+#men_product >div:first-child >h1{
+    padding: 10px 0px;
+    border-bottom: 1px solid grey;
+    color: #333333;
+}
+#men_filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+#men_container{
+    border: 0px dotted blue;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    text-align: center;
+}
+#men_container >div >img{
+    border: 0px dotted blue;
+    width: 200px;
+    height: 300px;
+}
+#men_container >div >button{
+    border: 0px dotted blue;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #333333;
+    color: white;
+}
+#men_container >div >button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+select{
+    border: none;
+    border-bottom: 3px solid #333333;
+    background-color: #f2f2f2;
+}
+#men_promo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+}
+#men_promo >div:hover{
+    border: 0px solid;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+#men_promo >div >img{
+    border: 0px solid;
+    margin-top: 5px;
+    width: 96%;
+    height: 200px;
+}
+#workspace{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+#workspace img{
+    width: 90%;
+    /* gap: 20px; */
+}
+.btn-class{
+    background-color: black;
+    color: white;
+    width: 90%;
+    text-align: center;
+    height: 7vh;
+    cursor: pointer;
+}
+.titleclass{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.rating{
+    text-align: center;
+    padding: 10px;
+}
+.price{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
