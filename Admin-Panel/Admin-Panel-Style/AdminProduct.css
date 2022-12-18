@@ -29,19 +29,19 @@ body {
 .lo,
 .jp {
     position: fixed;
-    height: calc(100% - 43%);
-    width: calc(100% - 74%);
-    top: 43%;
+    width: calc(100% - 75%);
+    top: 41.9%;
     bottom: 10px;
+    height: 100px;
 }
 
 .op .lo form,
 .op .jp form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     border: 2px solid black;
-    padding: 20px;
+    padding: 15px;
     border-radius: 16px;
     box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
@@ -49,8 +49,8 @@ body {
 .op .lo form input,
 .op .jp form input {
     /* padding: 50px 100px 50px 100px; */
-    font-size: xx-large;
-    padding: 2px;
+    font-size: larger;
+    padding: 3px;
     border-radius: 16px;
     border: none;
     text-align: center;
@@ -168,7 +168,7 @@ body {
 }
 
 .lo2 img {
-    width: 29%;
+    width: 25%;
     border-radius: 16px;
     border-end-end-radius: 100px;
     /* border-start-start-radius: 100px; */
@@ -231,7 +231,7 @@ body {
 .searchbox {
     position: fixed;
     display: flex;
-    bottom: 94.5%;
+    bottom: 93.5%;
     gap: 20px;
 }
 
@@ -245,7 +245,7 @@ body {
     background-color: #f5f5f5;
     transition: all 0.2s ease;
     margin-bottom: 10px;
-    padding: 5%;
+    padding: 4%;
     border-radius: 16px;
     color: red;
     background-color: transparent;
