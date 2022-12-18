@@ -1,11 +1,11 @@
 async function skinCare(){
-    let res=await fetch(`https://639c346116d1763ab1425acf.mockapi.io/haircare`);
+    let res=await fetch(`https://639b5256d51415019752662f.mockapi.io/skinCare`);
     let data=await res.json()
     console.log("Data",data)
     append(data)
 }
 skinCare();
-let cartItem=[];
+let cartItem = JSON.parse(localStorage.setItem("cartProductItem")) || [];
 function append(data){
     data.forEach(function(el){
         let workspace=document.getElementById("workspace")
