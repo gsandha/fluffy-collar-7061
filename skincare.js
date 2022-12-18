@@ -5,7 +5,7 @@ async function skinCare(){
     append(data)
 }
 skinCare();
-let cartItem=[];
+let cartItem=JSON.parse( localStorage.getItem("cartProductItem"))||[];
 function append(data){
     data.forEach(function(el){
         let workspace=document.getElementById("workspace")
