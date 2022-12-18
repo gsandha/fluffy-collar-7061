@@ -32,6 +32,7 @@
 
     .lo2 a {
         color: black;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 </style>
 
@@ -332,7 +333,6 @@
         let getAccount = document.querySelector('#op');
 
         if (getDataLocalStorage[i] !== '') {
-
             getAccount.innerHTML = `
             <i class="fa-regular fa-user"></i>
             ${getDataLocalStorage[i].Name}
