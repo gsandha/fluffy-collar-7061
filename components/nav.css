@@ -1,12 +1,18 @@
 *{
+    padding: 0px;
+    margin: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
 .navbar{
+    padding: 0;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    background-color: white;
+    z-index: 1;
+    height: 30vh;
 }
-#upper_most{
+/* #upper_most{
     width: 100%;
     height: 0.5%;
     display: flex;
@@ -14,8 +20,8 @@
     align-items: flex-end;
     background-color: #F2F2F2;
     
-}
-#sub_upper{
+} */
+/* #sub_upper{
     width: 20%;
     height: 100%;
     display: flex;
@@ -23,7 +29,7 @@
     align-items: center;
     background-color: #F2F2F2;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 #sub_upper > img{
     width: 8%;
     border-radius: 100%;
@@ -37,9 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0px auto;
 }
 #middle > #logo > img{
     width: 53%;
@@ -77,7 +81,7 @@
 
 #bottom{
     width: 90%;
-    margin: auto;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,9 +123,4 @@
 .lo2 a {
     color: black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.navbar{
-    background-color: white;
-    z-index: 1;
-    height: 40vh;
 }
