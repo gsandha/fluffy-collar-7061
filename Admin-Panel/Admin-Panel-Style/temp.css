@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5cdb95;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    padding: 40px;
+}
+
+#main {
+    position: relative;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 500px;
+    background-color: #c7e8cb;
+    box-shadow: inset 0 0 0 16px #5cdb95;
+}
+
+
+#firstName {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: xxx-large;
+    text-align: center;
+    top: 1.8em;
+}
+
+#firstName:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+}
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#firstName {
+    animation: zoomIn 6s linear infinite, gradientBG 6s linear infinite;
+}
+
+#firstName:after {
+    animation: zoomOut 6s linear infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.jio,
+.kio {
+    display: flex;
+    background: #fff;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+    width: fit-content;
+    border-radius: 16px;
+    margin-top: 50px;
+}
+
+.kio {
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+.jio img,
+.kio img {
+    border-radius: 16px;
+}
+
+#ti {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jio h1,
+.kio h1 {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradientBG 5s ease infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+}
