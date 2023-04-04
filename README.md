@@ -17,6 +17,19 @@ An e-commerce website which sells cosmetics and skin care products from where us
 - Administrator
 - Customers
 
+## Features
+-  Best-Selling products display on a product carousel.
+-  Login/Logout , SignUp.
+-  Cart  Functionality.
+-  Payment Functionality
+
+
+
+## Area of responsibilty
+
+- Cart and Payments functionality.
+- Built API by using postman and mock-api for all product pages.
+- Created all the product pages.
 
 
 
